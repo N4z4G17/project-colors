@@ -1,0 +1,36 @@
+html{
+    font-size: 16px;
+}
+
+
+body{
+    background: #192159;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; /* row */
+
+}
+
+#hexa{
+    font-size: 1.875rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* display: block; */
+    margin: 0 0 0.9375rem 0;
+}
+
+#color{
+    background: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border: 0.1875rem solid #ffffff;
+    border-radius: 1.5625rem; 
+    padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+    outline: none;  
+    cursor: pointer;
+}
