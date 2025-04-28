@@ -1,10 +1,14 @@
-let btnGenerarColor = document.getElementById("color");
-let hexText = document.getElementById("hexa");
-
-function generarColor(params) {
-    return Math.floor(Math.random()*16777215).toString(16);
+document.getElementById("color").addEventListener("click", changeBackground);
+function changeBackground()
+{
+    let symbols=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+    let color="#";
+    for(let i=0;i<6;i++){
+    color=color+symbols[Math.floor(Math.random() * 16)];
 }
+console.log(color);
+document.body.style.background = color;
+}
+document.querySelector("span").innerHTML=color;
 
-btnGenerarColor.addEventListener("click", setBg);
-//proxima clase seguimos
-document.body.style.backgroundColor = "#" + randomColor;
+
